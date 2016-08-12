@@ -1,0 +1,6 @@
+# Preset values to questions which would otherwise be asked while
+# installing packages.
+# Use debconf-set-selections to install
+openssh-server	openssh-server/permit-root-login	boolean	false
+man-db	man-db/install-setuid	boolean	false
+man-db	man-db/auto-update	boolean	true
