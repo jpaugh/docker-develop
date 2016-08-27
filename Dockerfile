@@ -65,6 +65,10 @@ RUN apt-get install --assume-yes \
         subversion bzr \ 
         mercurial mercurial-git 
 
+# Minimal C environment
+RUN apt-get install --assume-yes \
+        gcc make manpages manpages-dev
+
 RUN adduser devel --disabled-password --gecos 'devel user'
 USER devel
 WORKDIR /home/devel
