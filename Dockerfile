@@ -58,8 +58,7 @@ RUN apt-get install --assume-yes \
 # Source Control
 RUN apt-get install --assume-yes \
         git git-doc git-extras \
-        git-bzr git-cvs git-svn \
-        gitk git-gui
+        git-bzr git-cvs git-svn
 
 RUN apt-get install --assume-yes \
         subversion bzr \ 
