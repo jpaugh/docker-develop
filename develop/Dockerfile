@@ -36,6 +36,7 @@ RUN debconf-set-selections /tmp/debconf-package-selections
 
 # System essential
 RUN apt-get install --assume-yes \
+	sudo \
         apt-utils \
         dialog \
         man
