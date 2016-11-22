@@ -1,0 +1,9 @@
+Jonathan,
+
+When building a minor version, don't put things "in order," no matter how badly you want to! Instead, put new things at the bottom, and sort them out later.
+
+At each major version, re-sort all of the existing tags, and push; do no other changes in the major release.
+
+Reasons:
+    1. Each time you modify base layers, each higher layer has to be re-built, re-pushed, and re-downloaded by users, even though nothing has changed.
+    2. It's good to have a major version which actually works! Whenever the current additions are substantial and vetted, it's a good time for a major release!
